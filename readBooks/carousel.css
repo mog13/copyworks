@@ -1,0 +1,103 @@
+.carousel {
+    position: relative;
+}
+
+.carousel-item-container {
+    min-width: 120%;
+    margin-left: -10%;
+    background-color: blueviolet;
+    white-space: nowrap;
+    font-size: 0;
+
+}
+
+.carousel-item-container .carousel-item {
+    width: 400px;
+    height: 300px;
+    background-color: darkcyan;
+    border: solid 3px red;
+    display: inline-block;
+}
+
+
+.carousel-item-container .carousel-item.shrinking {
+    animation: carousel-shrinking 0.3s forwards;
+}
+.carousel-item-container .carousel-item.growing {
+     animation: carousel-growing 0.3s forwards;
+ }
+
+.carousel-item-container .carousel-item.skew-left {
+    animation: carousel-skew-left 0.3s forwards ;
+}
+.carousel-item-container .carousel-item.skew-right {
+    animation: carousel-skew-right 0.3s forwards ;
+}
+
+
+
+/*.carousel-item-container .carousel-item:nth-child(3n+1) {*/
+    /*background-color: aquamarine;*/
+/*}*/
+
+/*.carousel-item-container .carousel-item:nth-child(3n+2) {*/
+    /*background-color: darkslategrey;*/
+/*}*/
+
+.carousel .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carousel .carousel-button.carousel-button--left {
+    left: 0;
+}
+
+.carousel .carousel-button.carousel-button--right {
+    right: 0;
+}
+
+@keyframes carousel-shrinking {
+    100% {
+        width: 0;
+        padding:0;
+        margin:0;
+    }
+}
+
+@keyframes carousel-growing {
+    0% {
+        width: 0;
+        padding:0;
+        margin:0;
+    }
+}
+
+@keyframes carousel-skew-left {
+    0% {
+        transform: skew(0deg);
+    }
+    50% {
+        transform: skew(1deg);
+    }
+    0% {
+        transform: skew(0deg);
+    }
+}
+
+
+@keyframes carousel-skew-right {
+    0% {
+        transform: skew(0deg);
+    }
+    50% {
+        transform: skew(-1deg);
+    }
+    0% {
+        transform: skew(0deg);
+    }
+}
+
+
