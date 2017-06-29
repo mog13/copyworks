@@ -3,20 +3,58 @@
     <link rel="stylesheet" type="text/css" href="masterReset.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="carousel.css">
+    <link rel="stylesheet" type="text/css" href="carousel-content.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,700" rel="stylesheet">
 </head>
 
 <body>
 <div class="carousel">
-    <button class="carousel-button carousel-button--left" onclick="shiftLeft(this)">Test</button>
-    <button class="carousel-button carousel-button--right" onclick="shiftRight(this)">Test</button>
+    <button class="carousel-button carousel-button--left" onclick="shiftLeft()">
+        <span class="carousel-button--caret carousel-button--caret-left"></span>
+    </button>
+    <button class="carousel-button carousel-button--right" onclick="shiftRight()"></button>
 <ul class="carousel-item-container">
 
-    <li class="carousel-item">1</li>
-    <li class="carousel-item">2</li>
-    <li class="carousel-item">3</li>
-    <li class="carousel-item">4</li>
-    <li class="carousel-item">5</li>
-    <li class="carousel-item">6</li>
+    <li class="carousel-item">
+        <span class="content-background"></span>
+        <div class="book-container">
+            <img class="book-preview" src="https://marketplace.canva.com/MAB___U-clw/1/0/thumbnail_large/canva-yellow-lemon-children-book-cover-MAB___U-clw.jpg" />
+        </div>
+        <div class="text-container">
+            <h1>The Happy Lemon</h1>
+            <h3>By lee man</h3>
+        </div>
+    </li>
+    <li class="carousel-item">
+        <span class="content-background"></span>
+        <div class="book-container">
+            <img class="book-preview" src="https://marketplace.canva.com/MAB___U-clw/1/0/thumbnail_large/canva-yellow-lemon-children-book-cover-MAB___U-clw.jpg" />
+        </div>
+        <div class="text-container">
+            <h1>The Happy Lemon</h1>
+            <h3>By lee man</h3>
+        </div>
+    </li>
+    <li class="carousel-item">
+        <span class="content-background"></span>
+        <div class="book-container">
+            <img class="book-preview" src="https://marketplace.canva.com/MAB___U-clw/1/0/thumbnail_large/canva-yellow-lemon-children-book-cover-MAB___U-clw.jpg" />
+        </div>
+        <div class="text-container">
+            <h1>The Happy Lemon</h1>
+            <h3>By lee man</h3>
+        </div>
+    </li>
+    <li class="carousel-item">
+        <span class="content-background"></span>
+        <div class="book-container">
+            <img class="book-preview" src="https://marketplace.canva.com/MAB___U-clw/1/0/thumbnail_large/canva-yellow-lemon-children-book-cover-MAB___U-clw.jpg" />
+        </div>
+        <div class="text-container">
+            <h1>The Happy Lemon</h1>
+            <h3>By lee man</h3>
+        </div>
+    </li>
 </ul>
 </div>
 <script src="carousel.js"></script>

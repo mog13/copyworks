@@ -1,22 +1,21 @@
 .carousel {
     position: relative;
+    overflow-x: hidden;
 }
 
 .carousel-item-container {
     min-width: 120%;
-    margin-left: -10%;
-    background-color: blueviolet;
+    margin-left: -6%;
     white-space: nowrap;
     font-size: 0;
 
 }
 
 .carousel-item-container .carousel-item {
-    width: 400px;
+    width: 500px;
     height: 300px;
-    background-color: darkcyan;
-    border: solid 3px red;
-    display: inline-block;
+    display: inline-flex;
+    position:relative;
 }
 
 
@@ -34,29 +33,38 @@
     animation: carousel-skew-right 0.3s forwards ;
 }
 
-
-
-/*.carousel-item-container .carousel-item:nth-child(3n+1) {*/
-    /*background-color: aquamarine;*/
-/*}*/
-
-/*.carousel-item-container .carousel-item:nth-child(3n+2) {*/
-    /*background-color: darkslategrey;*/
-/*}*/
-
 .carousel .carousel-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: transparent;
+    box-shadow: 0px 0px 88px -4px rgba(20,20,20,0.55);
+    outline: transparent;
+}
+.carousel .carousel-button .carousel-button--caret{
+    border: solid #585757;
+    display: inline-block;
+    padding: 3px;
+    height: 13px;
+    width: 13px;
+}
+.carousel .carousel-button .carousel-button--caret-left{
+    border-width: 0 3px 3px 0;
+    transform: rotate(135deg) scale(1.2);
+    margin-left: 4px;
 }
 
 .carousel .carousel-button.carousel-button--left {
-    left: 0;
+    left: 20px;
 }
 
 .carousel .carousel-button.carousel-button--right {
-    right: 0;
+    right: 20px;
 }
 
 @keyframes carousel-shrinking {
@@ -64,6 +72,7 @@
         width: 0;
         padding:0;
         margin:0;
+        opacity: 0;
     }
 }
 
